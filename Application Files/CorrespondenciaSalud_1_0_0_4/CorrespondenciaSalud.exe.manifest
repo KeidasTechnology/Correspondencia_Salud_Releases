@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CorrespondenciaSalud.exe" version="1.0.0.4" publicKeyToken="1ed5126c0c41b4a9" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Icono.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CorrespondenciaSalud" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CorrespondenciaSalud.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto UAC
+             Si quiere cambiar el nivel del Control de cuentas de usuario de Windows reemplace el 
+             nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Especificar el elemento requestedExecutionLevel deshabilitará la virtualización de archivos y registros. 
+            Quite este elemento si la aplicación necesita esta virtualización para la compatibilidad
+            con versiones anteriores.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.AcroPDFLib.dll" size="8192">
+      <assemblyIdentity name="AxInterop.AcroPDFLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SmKhguYHlrqW96dOGpzQTb+LE0YZtIyxCTMra4dsiKg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CorrespondenciaSalud.exe" size="969184">
+      <assemblyIdentity name="CorrespondenciaSalud" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OvAd+jNcvpHu+qXkJ/uckKDnfP/8WZ3GelMTSdbI/BE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.AcroPDFLib.dll" size="11776">
+      <assemblyIdentity name="Interop.AcroPDFLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oQRwn89NnmduaO8N9oj7QEqoU/q0D+KRWudDq/GRHiw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CorrespondenciaSalud.exe.config" size="174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YP2igrvBrrg2sVjdbd5SPlIls2XMb8AzjauegjR7Hi0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Crypt.xml" size="468">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lOCzsEFKDSpdj5vdZZZnB/H9lnH+22cQvRzBCQRAP+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="doc.docx" size="62513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TmyKTGJq6cEcutX7v8LaJXu5xAb7b+fmw769zf9jjfA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Fondo_01.png" size="8156">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oqMvSWd/fezPTT67pJ+Y3zIZfWNYaJf2jyKzbBa1+00=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Icono.ico" size="104837">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P0QrjG6q6tXurfi/lDW63QZJM7H3CnG63GdIanJ8a/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Una lista de las versiones de Windows en la que se ha probado esta aplicación y
+           con la que se ha diseñado para que trabaje. Quite la marca de comentario de los elementos adecuados y Windows seleccionará 
+           automáticamente el entorno más compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-C2E6B85\ccda1" issuerKeyHash="69dbc190a82c20e4b8daf57933dfc7c50964fc61" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DagcXIjJQQERQMdxDYfxCw1hJ38//gdPA76pSvgA/rA=</DigestValue></Reference></SignedInfo><SignatureValue>nx5KtHBODM868M68AxNm04+/6ATpvne1Qj1aqH/nZZM6eCrvuuIOwp/41qXeav2TOWaQoXo4NfJMWWBf5t7nWk58Rw0z5iJuruW+FGFyUnH3Z0UlETTDCkMeV3nPiCEoL1bDA42yfzkGeGKVv5IJG4smQ2kRmz+1VJsxiF+0QJY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pGPTNtgJDU29YgBmOh9q5KWXfb0bnmfTTDhR9AcL/Gb51sc5q1lduFjMmNDze8x8Ds4Kg3N/IXZw3N/7uE03Hxgy2QMeTRQziilnlDGJn6si3ktg1jvz17liPYV2Zq9W6FeW5RcNYB/o227oF8mrhwux+mm4YGRA0VfqM+rWLJU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b0fe00f84aa9be034f07fe3f7f27610d0bf1870d71c740110141c9885c1ca80d" Description="" Url=""><as:assemblyIdentity name="CorrespondenciaSalud.exe" version="1.0.0.4" publicKeyToken="1ed5126c0c41b4a9" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-C2E6B85\ccda1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>4gLJJy98IhYWAqFzyo+tvo8mMKpziwudOVvbWFXYNyc=</DigestValue></Reference></SignedInfo><SignatureValue>OlbueAegzPDc74Dj5a0HyaK5NOFaWFZ0JlzymmRtg9KP8sw7EkKLoxmjBFJgBtM9UUWYT6EeNQ+XtFXRu/HVETwqVhXwrK2LpSK5nI6kl/aypd+VrFBbDXeiOPBvPHSJI7ofJ0K75I9PEU++E5+x91QT86c7ZRoUqjIqIjiZMbM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pGPTNtgJDU29YgBmOh9q5KWXfb0bnmfTTDhR9AcL/Gb51sc5q1lduFjMmNDze8x8Ds4Kg3N/IXZw3N/7uE03Hxgy2QMeTRQziilnlDGJn6si3ktg1jvz17liPYV2Zq9W6FeW5RcNYB/o227oF8mrhwux+mm4YGRA0VfqM+rWLJU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQbXGJ9BOhqKtLsvpzKdvhuTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwHhcNMjAwMzA2MDExODQwWhcNMjEwMzA2MDcxODQwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAMgBFADYAQgA4ADUAXABjAGMAZABhADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKRj0zbYCQ1NvWIAZjofauSll329G55n00w4UfQHC/xm+dbHOatZXbhYzJjQ83vMfA7OCoNzfyF2cNzf+7hNNx8YMtkDHk0UM4opZ5QxiZ+rIt5LYNY789e5Yj2FdmavVuhXluUXDWAf6Ntu6BfJq4cLsfppuGBkQNFX6jPq1iyVAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAoFpmJZt3Cz0awKzbbm57qByoModfYHHFqUB5tNQXCa07FSAySFVqPBrQFevdMa3/ZiB47+xp7e13BHulHo4xrZuECrlaNX79T0NAJibKKAx7OsaBr6E910zF7KYqco28jyzMZtzaaPXN7DK3xLxlqr2WHPYAjcFizrxECT57zdQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
